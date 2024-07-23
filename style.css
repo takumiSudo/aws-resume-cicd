@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
+:root {
+  --dark: #1f2426;
+  --gray: #4b5859;
+  --blueGray: #293e41;
+  --lightestBlue: #b4dad7;
+  --lightBlue: #519ca4;
+  --blue: #2196a7;
+  --darkBlue: #307982;
+  --darkestBlue: #215961;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--lightestBlue);
+  font-family: "Bitter", Helvetica, arial;
+  letter-spacing: 0.05em;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  /* Adjusts the spacing around the lists */
+}
+
+.skills-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* Removes default bullet styling */
+}
+
+.skills-container li {
+  padding: 8px 0;
+  /* Adds vertical padding for better readability */
+}
+
+h3 {
+  color: var(--lightestBlue);
+  font-size: 20px;
+}
+
+.social-links a {
+  color: white;
+  padding: 5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #ff6363;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+h1 {
+  margin-bottom: 0;
+  /* Reduces space below the h1 element */
+  padding-bottom: 0;
+  /* Ensures no extra padding is adding space */
+}
+
+ul li {
+  padding-top: 0.5em;
+  color: white;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
+ul li:hover {
+  color: #ff6363;
+}
+
+p {
+  line-height: 1.5;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  color: white;
+}
+
+a:hover {
+  color: #ff6363;
+}
+
+h2 {
+  display: inline-block;
+}
+
+h3 {
+  line-height: 0.3em;
+}
+
+.wrap {
+  padding: 2em;
+}
+
+section {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 1px solid var(--lightestBlue);
+}
+
+.experience h4 {
+  font-size: 18px;
+  color: var(--lightBlue);
+  letter-spacing: 0.05em;
+}
+
+.experience h4 span {
+  float: right;
+  /* Aligns the location and years to the right */
+  color: var(--lightBlue);
+}
+
+.full-qual,
+.third-qual,
+.quarter-qual {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.qual hr {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .third-qual {
+    width: 70%;
+    float: left;
+    margin-right: 5%;
+  }
+
+  .quarter-qual {
+    width: 25%;
+    float: left;
+  }
+}

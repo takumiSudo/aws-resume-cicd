@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Visitor Counter</title>
+    <script>
+        // Function to log visit
+        function logVisit() {
+            fetch('https://q787ww0ykg.execute-api.us-west-1.amazonaws.com/default/visitor_counter', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => console.log('Access logged:', data))
+            .catch(error => console.error('Error logging access:', error));
+        }
+
+        // Log the visit when the page loads
+        window.onload = logVisit;
+    </script>
+  <title>Takumi Sudo - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<section>
+
+    <header style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <h1>takumi Sudo</h1>
+      <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+    </div>
+    <div class="social-links" style="margin-right: 20px;">
+      <span><a href="https://www.linkedin.com/in/takumi-sudo-s02" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+      <span><a href="https://x.com/02_sudo" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+      <span><a href="https://github.com/takumiSudo" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+      <span><a href="https://www.instagram.com/tss_.02/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></span>
+    </div>
+  
+  </header>
+  <hr/>
+</section>
+<section id="Introduction">
+
+    <p>Cupertino, California ・ +1 (408) 219-2706 ・ <a href="mailto:sudo.takumi.02@gmail.com">sudo.takumi.02@gmail.com</a></p>
+
+  <article>
+    <p>A passionate student with a strong background in Computer Science at Keio University Shonan-Fujisawa Campus. </p>
+    <p>Proven track record of leading winning teams in national hackathons by utilizing cutting edge NLP and ML technologies. Experiences with hosting on-premise LLMs, configuring Linux servers for automated ML processes. </p>
+    <p>Also has worked with Privacy Program Monitoring Initiatives using his domain knowledge with GDPR/AI Act from his Amsterdam days. Deriving actionable insights to key stakeholders, contributing to their strategic roadmapping.</p>
+    <p>A perpetual learner, Takumi’s enthusiasm extends beyond the confines of Computer Science, embodying strong communication skills and the ability to build trust effectively.</p> 
+      <p>Highly experienced in cultivating a profound global perspective through extensive exposure to diverse cultures, born and raised in Silicon Valley, educated in Tokyo, Japan and now prospering in the heart of New York City.</p>
+  </article>
+  
+  <hr/>
+  </section>
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-container">
+    <ul>
+      <li><a href="https://pytorch.org/" target="_blank">Pytorch / Tensorflow</a></li>
+      <li><a href="https://arxiv.org/abs/1707.06347" target="_blank">Reinforcement Learning</a></li>
+      <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+      <li><a href="https://leetcode.com" target="_blank">C / C++</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://aws.amazon.com/free/" target="_blank">AWS Cloud Computing</a></li>
+      <li><a href="https://www.isc2.org/certifications/cissp" target="_blank">Cyber Strategic Planning</a></li>
+      <li><a href="https://arxiv.org/abs/1602.05629" target="_blank">Federated Learning</a></li>
+      <li><a href="https://mac.getutm.app/"　target="_blank">Linux</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://docs.llamaindex.ai/en/stable/"　target="_blank">HuggingFace / LlamaIndex</a></li>
+      <li><a href="https://christophm.github.io/interpretable-ml-book/"　target="_blank">xAI</a></li>
+      <li><a href="https://www.djangoproject.com/"target="_blank">BackEnd Development</a></li>
+      <li><a href="https://github.com/doomemacs/doomemacs"target="_blank">Vim / Emacs</a></li>
+    </ul>
+  </div>
+  <hr/>
+</section>
+
+<section id="professional-experiences">
+  <h2>Professional Experiences</h2>
+  <div class="experience">
+    <h4><a href="https://www2.deloitte.com/us/en/pages/risk/solutions/cyber-risk-services.html" target="_blank">Deloitte & Touche LLC</a><span>New York City, USA - 2024</span></h4>
+    <ul>
+      <li>Engaged with a large social media company to support the development and operationalization of a privacy program, focusing on strategic road mapping to prioritize processes.</li>
+      <li>Assisted in creating maturity assessment deliverables by analyzing assessment notes with Process owners to derive qualitative and quantitative actionable insights.</li>
+      <li>Contributed to the development of privacy monitoring safeguards, utilizing industry best practices to comprehensively capture monitoring KPIs.</li>
+    </ul>
+  </div>
+  <div class="experience">
+    <h4><a href="https://www.mlprograms.com/our-services/propensity-to-claim/mlp-score/" target="_blank">Machine Learning Programs, Ltd <span>Amsterdam, The Netherlands - 2024</span></h4>
+    <ul>
+      <li>Led the development of a local retrieval augmented generation system for on-premise LLM hosting using Ollama and LlamaIndex, reducing developers’ reliance on online LLMs.</li>
+      <li>Automated insurance pricing explanations using Shapley values and NLP to comply with GDPR regulations on ML-based pricing, speeding up the process by 87%.</li>
+      <li>Conducted Exploratory Data Analysis (EDA) on UK car/home insurance data, providing insights into causal relationships within features such as income/family relationships.</li>
+    </ul>
+  </div>
+  <div class="experience">
+    <h4><a href="https://sites.google.com/view/dpl-sfc/%E3%83%9B%E3%83%BC%E3%83%A0?authuser=0" taget="_blank">Keio University </a><span>Fujisawa, Japan - 2022 - present</span></h4>
+    <ul>
+      <li>Led numerous technical walkthroughs with other researchers, specifically expertized in privacy preserving machine learning such as Federated Learning and Data Privacy in LLMs.</li>
+      <li>Leveraged Professor Kawashima’s domain expertise in distributed systems, and applying batch process optimization on the decentralized machine learning architectures.</li>
+      <li>Initiated book clubs with “Pattern Recognition and Machine Learning” to acquire deep knowledge on mathematical theories surrounding machine learning and computation.</li>
+    </ul>
+  </div>
+  <div class="experience">
+    <h4><a href="https://www.linkedin.com/company/catal/" target="_blank">Catal, Inc </a><span>Tokyo, Japan - 2021 - present</span></h4>
+    <ul>
+      <li>Taught over 120 students over the 3 years of working as an executive coach, ranging from 2nd grade elementary school children to high school students getting ready for their College Examinations.</li>
+      <li>Introduced 7 new coaches to the company via the OJT training program, personalizing each with the individual’s backgrounds and skillsets.</li>
+      <li>Improved a student’s EIKEN SCORE by 78% and the TOEFL iBT score by 23 utilizing English to English learning styles compared to traditional Japanese curriculums.</li>
+    </ul>
+  </div>
+</section>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
